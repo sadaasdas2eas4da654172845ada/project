@@ -37,3 +37,12 @@ git config user.emali
 U 未跟踪
 A 
 M 跟踪后被修改
+
+
+
+创建快照（备份）
+git add . 将所有文件放到暂存区
+git commit -m "提交信息" 将暂存区提交到仓库（某个功能完成的时候/在必要时候提交）
+
+【工作区】git add . -->  暂存区 git commit -m "xxx" --> 【repo】
+【工作区】 git commit -a -m "xxx"   --> 【repo】(vim 编译器操作)
