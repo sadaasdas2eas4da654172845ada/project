@@ -46,3 +46,14 @@ git commit -m "提交信息" 将暂存区提交到仓库（某个功能完成的
 
 【工作区】git add . -->  暂存区 git commit -m "xxx" --> 【repo】
 【工作区】 git commit -a -m "xxx"   --> 【repo】(vim 编译器操作)
+
+
+git reset --soft commit_id 将当前版本的内容回退到暂存区
+git reset --hard commit_id 将当前版本的内容删除
+git reset --mixed commit_id (默认) 将当前版本的内容回退到工作区
+HEAD=>当前版本
+HEAD^=>当前版本的上一个版本
+HEAD~n=>当前版本的上n个版本
+暂存区 <--  git reset --soft commit_id 【repo】
+工作区  <-- git reset commit_id 【repo】
+移除  <-- git reset --hard commit_id 【repo】
